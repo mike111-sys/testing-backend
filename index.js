@@ -11,7 +11,7 @@ const fs_1 = __importDefault(require("fs"));
 const app = (0, express_1.default)();
 const PORT = parseInt(process.env.PORT || '5000');
 // Ensure uploads folder exists
-const uploadsDir = path_1.default.join(__dirname, '../uploads');
+const uploadsDir = path_1.default.join(__dirname, './uploads');
 if (!fs_1.default.existsSync(uploadsDir)) {
     fs_1.default.mkdirSync(uploadsDir);
 }
